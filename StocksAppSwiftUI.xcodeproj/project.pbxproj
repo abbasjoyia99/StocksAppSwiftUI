@@ -13,7 +13,18 @@
 		D76E83D22892AE8100C3A095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E83D12892AE8100C3A095 /* Assets.xcassets */; };
 		D76E83D52892AE8100C3A095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */; };
 		D7DEDCE82893BA1500F9F6EE /* AppCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */; };
+		D7DEDCF02893BBC300F9F6EE /* StocksAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCEF2893BBC300F9F6EE /* StocksAppSwiftUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7DEDCF12893BBC300F9F6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76E83C22892AE8000C3A095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76E83C92892AE8000C3A095;
+			remoteInfo = StocksAppSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36EF6D24284B7327C38F68C6 /* Pods-StocksAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -24,6 +35,8 @@
 		D76E83D12892AE8100C3A095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterManager.swift; sourceTree = "<group>"; };
+		D7DEDCED2893BBC300F9F6EE /* StocksAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DEDCEF2893BBC300F9F6EE /* StocksAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppSwiftUITests.swift; sourceTree = "<group>"; };
 		EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +46,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC163F107D51302C17AEF5C /* Pods_StocksAppSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DEDCEA2893BBC300F9F6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D76E83CC2892AE8000C3A095 /* StocksAppSwiftUI */,
+				D7DEDCEE2893BBC300F9F6EE /* StocksAppSwiftUITests */,
 				D76E83CB2892AE8000C3A095 /* Products */,
 				FA7543A4EC8BD80D5D6D24B1 /* Pods */,
 				9B9CDF433E115A119D9651CF /* Frameworks */,
@@ -61,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				D76E83CA2892AE8000C3A095 /* StocksAppSwiftUI.app */,
+				D7DEDCED2893BBC300F9F6EE /* StocksAppSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +105,14 @@
 				D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7DEDCEE2893BBC300F9F6EE /* StocksAppSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEDCEF2893BBC300F9F6EE /* StocksAppSwiftUITests.swift */,
+			);
+			path = StocksAppSwiftUITests;
 			sourceTree = "<group>";
 		};
 		FA7543A4EC8BD80D5D6D24B1 /* Pods */ = {
@@ -115,6 +145,24 @@
 			productReference = D76E83CA2892AE8000C3A095 /* StocksAppSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D7DEDCEC2893BBC300F9F6EE /* StocksAppSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DEDCF32893BBC300F9F6EE /* Build configuration list for PBXNativeTarget "StocksAppSwiftUITests" */;
+			buildPhases = (
+				D7DEDCE92893BBC300F9F6EE /* Sources */,
+				D7DEDCEA2893BBC300F9F6EE /* Frameworks */,
+				D7DEDCEB2893BBC300F9F6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DEDCF22893BBC300F9F6EE /* PBXTargetDependency */,
+			);
+			name = StocksAppSwiftUITests;
+			productName = StocksAppSwiftUITests;
+			productReference = D7DEDCED2893BBC300F9F6EE /* StocksAppSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +175,10 @@
 				TargetAttributes = {
 					D76E83C92892AE8000C3A095 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					D7DEDCEC2893BBC300F9F6EE = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D76E83C92892AE8000C3A095;
 					};
 				};
 			};
@@ -144,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				D76E83C92892AE8000C3A095 /* StocksAppSwiftUI */,
+				D7DEDCEC2893BBC300F9F6EE /* StocksAppSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +208,13 @@
 			files = (
 				D76E83D52892AE8100C3A095 /* Preview Assets.xcassets in Resources */,
 				D76E83D22892AE8100C3A095 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DEDCEB2893BBC300F9F6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +256,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7DEDCE92893BBC300F9F6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DEDCF02893BBC300F9F6EE /* StocksAppSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7DEDCF22893BBC300F9F6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76E83C92892AE8000C3A095 /* StocksAppSwiftUI */;
+			targetProxy = D7DEDCF12893BBC300F9F6EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D76E83D62892AE8100C3A095 /* Debug */ = {
@@ -375,6 +451,42 @@
 			};
 			name = Release;
 		};
+		D7DEDCF42893BBC300F9F6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B3EYX6LH5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SigmaTec.StocksAppSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StocksAppSwiftUI.app/StocksAppSwiftUI";
+			};
+			name = Debug;
+		};
+		D7DEDCF52893BBC300F9F6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B3EYX6LH5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SigmaTec.StocksAppSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StocksAppSwiftUI.app/StocksAppSwiftUI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,6 +504,15 @@
 			buildConfigurations = (
 				D76E83D92892AE8100C3A095 /* Debug */,
 				D76E83DA2892AE8100C3A095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DEDCF32893BBC300F9F6EE /* Build configuration list for PBXNativeTarget "StocksAppSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DEDCF42893BBC300F9F6EE /* Debug */,
+				D7DEDCF52893BBC300F9F6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
