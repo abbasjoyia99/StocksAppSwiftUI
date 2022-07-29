@@ -14,6 +14,10 @@
 		D76E83D52892AE8100C3A095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */; };
 		D7DEDCE82893BA1500F9F6EE /* AppCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */; };
 		D7DEDCF02893BBC300F9F6EE /* StocksAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCEF2893BBC300F9F6EE /* StocksAppSwiftUITests.swift */; };
+		D7DEDCF92893E4CA00F9F6EE /* Stok.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCF82893E4CA00F9F6EE /* Stok.swift */; };
+		D7DEDCFE2893F04800F9F6EE /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCFD2893F04800F9F6EE /* StockViewModel.swift */; };
+		D7DEDD002893F05800F9F6EE /* StokcListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCFF2893F05800F9F6EE /* StokcListViewModel.swift */; };
+		D7DEDD022893F2A400F9F6EE /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDD012893F2A400F9F6EE /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,10 @@
 		D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterManager.swift; sourceTree = "<group>"; };
 		D7DEDCED2893BBC300F9F6EE /* StocksAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DEDCEF2893BBC300F9F6EE /* StocksAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppSwiftUITests.swift; sourceTree = "<group>"; };
+		D7DEDCF82893E4CA00F9F6EE /* Stok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stok.swift; sourceTree = "<group>"; };
+		D7DEDCFD2893F04800F9F6EE /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
+		D7DEDCFF2893F05800F9F6EE /* StokcListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokcListViewModel.swift; sourceTree = "<group>"; };
+		D7DEDD012893F2A400F9F6EE /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +98,9 @@
 		D76E83CC2892AE8000C3A095 /* StocksAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D7DEDCFC2893F02E00F9F6EE /* ViewModel */,
+				D7DEDCFB2893E4DA00F9F6EE /* Models */,
+				D7DEDCFA2893E4CF00F9F6EE /* Services */,
 				D76E83CD2892AE8000C3A095 /* StocksAppSwiftUIApp.swift */,
 				D76E83CF2892AE8000C3A095 /* ContentView.swift */,
 				D76E83D12892AE8100C3A095 /* Assets.xcassets */,
@@ -113,6 +124,31 @@
 				D7DEDCEF2893BBC300F9F6EE /* StocksAppSwiftUITests.swift */,
 			);
 			path = StocksAppSwiftUITests;
+			sourceTree = "<group>";
+		};
+		D7DEDCFA2893E4CF00F9F6EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEDD012893F2A400F9F6EE /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D7DEDCFB2893E4DA00F9F6EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEDCF82893E4CA00F9F6EE /* Stok.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7DEDCFC2893F02E00F9F6EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEDCFD2893F04800F9F6EE /* StockViewModel.swift */,
+				D7DEDCFF2893F05800F9F6EE /* StokcListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FA7543A4EC8BD80D5D6D24B1 /* Pods */ = {
@@ -251,7 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76E83D02892AE8000C3A095 /* ContentView.swift in Sources */,
+				D7DEDCFE2893F04800F9F6EE /* StockViewModel.swift in Sources */,
 				D7DEDCE82893BA1500F9F6EE /* AppCenterManager.swift in Sources */,
+				D7DEDD022893F2A400F9F6EE /* Services.swift in Sources */,
+				D7DEDD002893F05800F9F6EE /* StokcListViewModel.swift in Sources */,
+				D7DEDCF92893E4CA00F9F6EE /* Stok.swift in Sources */,
 				D76E83CE2892AE8000C3A095 /* StocksAppSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
