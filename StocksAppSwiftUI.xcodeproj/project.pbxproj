@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAC163F107D51302C17AEF5C /* Pods_StocksAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AEEFBEE2C25AD8C4CEC506 /* Pods_StocksAppSwiftUI.framework */; };
 		D76E83CE2892AE8000C3A095 /* StocksAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E83CD2892AE8000C3A095 /* StocksAppSwiftUIApp.swift */; };
 		D76E83D02892AE8000C3A095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E83CF2892AE8000C3A095 /* ContentView.swift */; };
 		D76E83D22892AE8100C3A095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E83D12892AE8100C3A095 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36EF6D24284B7327C38F68C6 /* Pods-StocksAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		C5AEEFBEE2C25AD8C4CEC506 /* Pods_StocksAppSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StocksAppSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76E83CA2892AE8000C3A095 /* StocksAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76E83CD2892AE8000C3A095 /* StocksAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		D76E83CF2892AE8000C3A095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D76E83D12892AE8100C3A095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC163F107D51302C17AEF5C /* Pods_StocksAppSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B9CDF433E115A119D9651CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5AEEFBEE2C25AD8C4CEC506 /* Pods_StocksAppSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D76E83C12892AE8000C3A095 = {
 			isa = PBXGroup;
 			children = (
 				D76E83CC2892AE8000C3A095 /* StocksAppSwiftUI */,
 				D76E83CB2892AE8000C3A095 /* Products */,
+				FA7543A4EC8BD80D5D6D24B1 /* Pods */,
+				9B9CDF433E115A119D9651CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FA7543A4EC8BD80D5D6D24B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */,
+				36EF6D24284B7327C38F68C6 /* Pods-StocksAppSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D76E83D82892AE8100C3A095 /* Build configuration list for PBXNativeTarget "StocksAppSwiftUI" */;
 			buildPhases = (
+				E53E520031D75650DEA9B9FE /* [CP] Check Pods Manifest.lock */,
 				D76E83C62892AE8000C3A095 /* Sources */,
 				D76E83C72892AE8000C3A095 /* Frameworks */,
 				D76E83C82892AE8000C3A095 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E53E520031D75650DEA9B9FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StocksAppSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D76E83C62892AE8000C3A095 /* Sources */ = {
@@ -263,6 +314,7 @@
 		};
 		D76E83D92892AE8100C3A095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +344,7 @@
 		};
 		D76E83DA2892AE8100C3A095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36EF6D24284B7327C38F68C6 /* Pods-StocksAppSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

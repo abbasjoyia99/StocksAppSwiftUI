@@ -1,0 +1,6 @@
+framework module Pods_StocksAppSwiftUI {
+  umbrella header "Pods-StocksAppSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
