@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct StocksAppSwiftUIApp: App {
+     let appcenterManaer  = AppCenterManager.shared
     var body: some Scene {
         WindowGroup {
             ContentView()

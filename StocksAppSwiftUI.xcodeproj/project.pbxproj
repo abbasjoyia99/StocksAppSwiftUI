@@ -12,6 +12,7 @@
 		D76E83D02892AE8000C3A095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E83CF2892AE8000C3A095 /* ContentView.swift */; };
 		D76E83D22892AE8100C3A095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E83D12892AE8100C3A095 /* Assets.xcassets */; };
 		D76E83D52892AE8100C3A095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */; };
+		D7DEDCE82893BA1500F9F6EE /* AppCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D76E83CF2892AE8000C3A095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D76E83D12892AE8100C3A095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D76E83D42892AE8100C3A095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterManager.swift; sourceTree = "<group>"; };
 		EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				D76E83CF2892AE8000C3A095 /* ContentView.swift */,
 				D76E83D12892AE8100C3A095 /* Assets.xcassets */,
 				D76E83D32892AE8100C3A095 /* Preview Content */,
+				D7DEDCE72893BA1500F9F6EE /* AppCenterManager.swift */,
 			);
 			path = StocksAppSwiftUI;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */,
 				36EF6D24284B7327C38F68C6 /* Pods-StocksAppSwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -189,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76E83D02892AE8000C3A095 /* ContentView.swift in Sources */,
+				D7DEDCE82893BA1500F9F6EE /* AppCenterManager.swift in Sources */,
 				D76E83CE2892AE8000C3A095 /* StocksAppSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
