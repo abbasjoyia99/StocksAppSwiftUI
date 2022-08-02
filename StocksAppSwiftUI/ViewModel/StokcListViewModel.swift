@@ -7,8 +7,11 @@
 
 import Foundation
 import SwiftUI
+import Combine
+
 
 class StockListViewModel:ObservableObject {
+    
     @Published var searchStock:String = ""
     @Published var stockList:[StockViewModel] = [StockViewModel]()
     
@@ -17,7 +20,9 @@ class StockListViewModel:ObservableObject {
     }
     private  func fetchStocks() {
         Services().getStocks() { [weak self] stocks in
+            
             if let stocks = stocks {
+                
                 self?.stockList = stocks.map(StockViewModel.init)
             }
         }

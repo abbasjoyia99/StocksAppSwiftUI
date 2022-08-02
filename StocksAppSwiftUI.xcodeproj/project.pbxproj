@@ -18,6 +18,9 @@
 		D7DEDCFE2893F04800F9F6EE /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCFD2893F04800F9F6EE /* StockViewModel.swift */; };
 		D7DEDD002893F05800F9F6EE /* StokcListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDCFF2893F05800F9F6EE /* StokcListViewModel.swift */; };
 		D7DEDD022893F2A400F9F6EE /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDD012893F2A400F9F6EE /* Services.swift */; };
+		D7DEDD062893FEFF00F9F6EE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEDD052893FEFF00F9F6EE /* SearchBarView.swift */; };
+		D7EEFA4528954432003AC00E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EEFA4428954432003AC00E /* ListView.swift */; };
+		D7EEFA4728954553003AC00E /* StockCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EEFA4628954553003AC00E /* StockCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		D7DEDCFD2893F04800F9F6EE /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		D7DEDCFF2893F05800F9F6EE /* StokcListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StokcListViewModel.swift; sourceTree = "<group>"; };
 		D7DEDD012893F2A400F9F6EE /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		D7DEDD032893FE7400F9F6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D7DEDD052893FEFF00F9F6EE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		D7EEFA4428954432003AC00E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D7EEFA4628954553003AC00E /* StockCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellView.swift; sourceTree = "<group>"; };
 		EE2DBE28B95BEB5B26D6E465 /* Pods-StocksAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-StocksAppSwiftUI/Pods-StocksAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +105,8 @@
 		D76E83CC2892AE8000C3A095 /* StocksAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D7DEDD042893FEEA00F9F6EE /* Views */,
+				D7DEDD032893FE7400F9F6EE /* Info.plist */,
 				D7DEDCFC2893F02E00F9F6EE /* ViewModel */,
 				D7DEDCFB2893E4DA00F9F6EE /* Models */,
 				D7DEDCFA2893E4CF00F9F6EE /* Services */,
@@ -149,6 +158,16 @@
 				D7DEDCFF2893F05800F9F6EE /* StokcListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D7DEDD042893FEEA00F9F6EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEDD052893FEFF00F9F6EE /* SearchBarView.swift */,
+				D7EEFA4428954432003AC00E /* ListView.swift */,
+				D7EEFA4628954553003AC00E /* StockCellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FA7543A4EC8BD80D5D6D24B1 /* Pods */ = {
@@ -290,9 +309,12 @@
 				D7DEDCFE2893F04800F9F6EE /* StockViewModel.swift in Sources */,
 				D7DEDCE82893BA1500F9F6EE /* AppCenterManager.swift in Sources */,
 				D7DEDD022893F2A400F9F6EE /* Services.swift in Sources */,
+				D7DEDD062893FEFF00F9F6EE /* SearchBarView.swift in Sources */,
+				D7EEFA4728954553003AC00E /* StockCellView.swift in Sources */,
 				D7DEDD002893F05800F9F6EE /* StokcListViewModel.swift in Sources */,
 				D7DEDCF92893E4CA00F9F6EE /* Stok.swift in Sources */,
 				D76E83CE2892AE8000C3A095 /* StocksAppSwiftUIApp.swift in Sources */,
+				D7EEFA4528954432003AC00E /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +465,7 @@
 				DEVELOPMENT_TEAM = 8B3EYX6LH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StocksAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,6 +496,7 @@
 				DEVELOPMENT_TEAM = 8B3EYX6LH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StocksAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

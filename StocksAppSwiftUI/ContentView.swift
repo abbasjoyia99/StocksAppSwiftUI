@@ -11,15 +11,57 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 struct ContentView: View {
-    var body: some View {
-        Text("install app center")
-            .padding()
+    
+    let releaseDate = Date()
+    
+    let stackDateFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd yyyy"
+        return formatter
+    }()
+    
+    @ObservedObject var stockListViewModel = StockListViewModel()
+    init() {
+      let coloredAppearance = UINavigationBarAppearance()
+      coloredAppearance.configureWithOpaqueBackground()
+      coloredAppearance.backgroundColor = .black
+      coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+      coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+      
+      UINavigationBar.appearance().standardAppearance = coloredAppearance
+      UINavigationBar.appearance().compactAppearance = coloredAppearance
+      UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+      UINavigationBar.appearance().tintColor = .white
+        stockListViewModel.loadStock()
     }
-    func addApCenterSetup() {
-        AppCenter.start(withAppSecret: "800c3e33-e55a-42e3-80c5-8082062db97f", services:[
-              Analytics.self,
-              Crashes.self
-            ])
+    
+    var body: some View {
+        NavigationView {
+            ZStack() {
+                VStack (alignment: .leading, spacing: 10) {
+                    HStack() {
+                        Text(releaseDate,formatter: self.stackDateFormat)
+                            .padding(.horizontal,20)
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                        
+                        
+                    }
+                    HStack() {
+                        SearchBarView(searchStock: .constant(""))
+
+                    }
+                    ListView(stockList: stockListViewModel.stockList)
+                    Spacer()
+                    
+                    
+                }
+            }
+            .navigationTitle("Stocks")
+            .navigationBarTitleDisplayMode(.large)
+            .foregroundColor(.black)
+            .padding(.top)
+        }
     }
 }
 

@@ -8,7 +8,7 @@
 import Foundation
 
 struct StockViewModel {
-    let stock :Stok
+    let stock :Stock
     
     var symbol:String {
         return self.stock.symbol
